@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/nick-karvounis.jpg"
+  image: "/assets/images/nick-karvounis.jpg"
 ---
 
 My Learning Blog
