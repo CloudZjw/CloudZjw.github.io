@@ -1,7 +1,8 @@
 ---
 layout: archive
 permalink: /algorithm/
-title: "Algorithm"
+title: &title "Algorithm"
+alt_title: *title
 excerpt: &excerpt "Algorithm 4 Learning and Updating..."
 introduction: *excerpt
 pagination:
