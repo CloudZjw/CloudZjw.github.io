@@ -26,17 +26,17 @@ date: 2019-12-25
 
 现在有7个对象，分别是数字0到6，对它们进行如下操作：
 
-union(0, 2)
-union(1, 3)
-union(1, 4)
-union(5, 6)
-find(1, 4)
-find(4, 5)
+union(0, 2),
+union(1, 3),
+union(1, 4),
+union(5, 6),
+find(1, 4),
+find(4, 5),
 find(5, 6)
 
 ![union-to-get-three-component](/assets/images/algorithm/2019-12-25-union-find/union-to-get-three-component.png)
 
-以上的四个Union操作分别连通0, 2 | 1, 3, 4 | 5, 6
+以上的四个Union操作分别连通{0, 2}, {1, 3, 4}, {5, 6}.
 
 find(1, 4)查询1和4是否连通，结果返回是，后续find操作类似。
 
@@ -379,6 +379,6 @@ lg* N(Iterated logarithm - 迭对数)，详情参见[Wikipedia-Iterated logarith
 | Algorithm | initialize | find | union
 | --- | ---: | ---: | ---: |
 | Quick-Find | N | 1 | N |
-| Quick-Union | N | N(worst case) | N(worst case) |
+| Quick-Union | N | Tree height | Tree height |
 | Weighted Quick-Union | N | lgN | lgN |
 | Weighted Quick-Union | N | lg* N | lg* N |
