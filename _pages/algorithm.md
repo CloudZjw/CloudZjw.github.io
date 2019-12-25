@@ -11,4 +11,4 @@ author_profile: true
 date: 2019-12-25
 ---
 
-{% include posts-category.html %}
+Emmm... I don't know how to category the posts.
