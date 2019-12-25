@@ -34,7 +34,7 @@ find(1, 4)
 find(4, 5)
 find(5, 6)
 
-![union-to-get-three-component](/assets/images/algorithm/union-to-get-three-component.png)
+![union-to-get-three-component](/assets/images/algorithm/2019-12-25-union-find/union-to-get-three-component.png)
 
 以上的四个Union操作分别连通0, 2 | 1, 3, 4 | 5, 6
 
@@ -48,7 +48,7 @@ find(1, 4)查询1和4是否连通，结果返回是，后续find操作类似。
 
 现在我们将2和5连接起来：union(2, 5)
 
-![union-2-5](/assets/images/algorithm/union-2-5.png)
+![union-2-5](/assets/images/algorithm/2019-12-25-union-find/union-2-5.png)
 
 现在只剩下2个连通分量：{0,2,5,6}, {1,3,4}
 
@@ -79,7 +79,7 @@ find(1, 4)查询1和4是否连通，结果返回是，后续find操作类似。
 ### 2.3 合并操作
 
 对对象p和q进行合并，将所有值为id[p]的索引改为id[q]
-![union-in-quick-find](/assets/images/algorithm/union-in-quick-find.png)
+![union-in-quick-find](/assets/images/algorithm/2019-12-25-union-find/union-in-quick-find.png)
 
 ### 2.4 Quick-Find类实现
 
@@ -135,12 +135,12 @@ public class QuickFindUF
 ### 3.1 数据结构
 
 我们仍然需要一个数组id，但与快速查询不同的是，快速合并的id数组保存的是该索引所在的树的父节点。
-![data-structure-of-quick-union](/assets/images/algorithm/data-structure-of-quick-union.png)
+![data-structure-of-quick-union](/assets/images/algorithm/2019-12-25-union-find/data-structure-of-quick-union.png)
 
 ### 3.2 合并操作
 
 对对象p和q进行合并，将p的根节点设置为q的根节点的子节点。
-![union-of-quick-union](/assets/images/algorithm/union-of-quick-union.png)
+![union-of-quick-union](/assets/images/algorithm/2019-12-25-union-find/union-of-quick-union.png)
 
 ### 3.3 查询操作
 
@@ -203,10 +203,10 @@ public class QuickUnionUF
  加权并查算法是基于Quick-Union算法之上进行的改进，在进行union操作时，检查即将合并的两棵树的大小，将较小的树合并到较大的树之上。因为如果将较大的树合并到较小的树上，会造成树的高度增加，导致寻找的效率降低。
 
  普通Quick-Union算法可能得到的树：
-![compare-quick-union](/assets/images/algorithm/compare-quick-union.png)
+![compare-quick-union](/assets/images/algorithm/2019-12-25-union-find/compare-quick-union.png)
 
  Weighted Quick-Union算法可能得到的树：
-![compare-weighted-quick-union](/assets/images/algorithm/compare-weighted-quick-union.png)
+![compare-weighted-quick-union](/assets/images/algorithm/2019-12-25-union-find/compare-weighted-quick-union.png)
 
 #### Weighted Quick Union类实现
 
@@ -270,8 +270,9 @@ public class WeightedQuickUnionUF
 #### 时间复杂度分析
 
 | Algorithm | initialize | find | union
-| --- | ---: | ---: | ---: |
+| --- | --- | --- | --- |
 | Weighted Quick-Union | N | lgN | lgN |
+
 *其中lgN表示以2为底的对数*
 
 通过使用加权的方法，将查询和合并的时间复杂度都变成了O(lgN)，因为在加权的情况下，树的最大高度为lgN
@@ -280,9 +281,9 @@ public class WeightedQuickUnionUF
 
 在查询对象p的根节点之后，将p设置为p的根节点的子节点，这就是Quick-Union的路径压缩方法。
 
-![get-root-WQUPC](/assets/images/algorithm/get-root-WQUPC.png)
+![get-root-WQUPC](/assets/images/algorithm/2019-12-25-union-find/get-root-WQUPC.png)
 
-![path-compression-exec](/assets/images/algorithm/path-compression-exec.png)
+![path-compression-exec](/assets/images/algorithm/2019-12-25-union-find/path-compression-exec.png)
 
 #### Weighted Quick Union with Path Compression类实现
 
@@ -357,7 +358,7 @@ public class WeightedQuickUnionPathCompressionUF
 #### 时间复杂度分析
 
 | Algorithm | initialize | find | union
-| --- | ---: | ---: | ---: |
+| --- | --- | --- | --- |
 | Weighted Quick-Union | N | lg* N | lg* N |
 
 lg* N(Iterated logarithm - 迭对数)，详情参见[Wikipedia-Iterated logarithm](https://en.wikipedia.org/wiki/Iterated_logarithm)
