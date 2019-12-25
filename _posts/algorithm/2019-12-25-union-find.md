@@ -270,7 +270,7 @@ public class WeightedQuickUnionUF
 #### 时间复杂度分析
 
 | Algorithm | initialize | find | union
-| --- | --- | --- | --- |
+| --- | ---: | ---: | ---: |
 | Weighted Quick-Union | N | lgN | lgN |
 
 *其中lgN表示以2为底的对数*
@@ -358,7 +358,7 @@ public class WeightedQuickUnionPathCompressionUF
 #### 时间复杂度分析
 
 | Algorithm | initialize | find | union
-| --- | --- | --- | --- |
+| --- | ---: | ---: | ---: |
 | Weighted Quick-Union | N | lg* N | lg* N |
 
 lg* N(Iterated logarithm - 迭对数)，详情参见[Wikipedia-Iterated logarithm](https://en.wikipedia.org/wiki/Iterated_logarithm)
