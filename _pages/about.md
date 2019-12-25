@@ -5,5 +5,6 @@ header:
   image: "/assets/images/nick-karvounis.jpg"
 ---
 
-My Learning Blog
-Let's being better
+My Learning Blog.
+
+Let's being better.
