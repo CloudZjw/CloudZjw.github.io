@@ -1,12 +1,9 @@
 ---
-layout: archive
-permalink: /algorithm/
-title: &title "Algorithm"
-alt_title: *title
+layout: category
+permalink: /categories/algorithm/
+title: "Algorithm"
 introduction: "Algorithm 4 Learning and Updating..."
-pagination:
-  enabled: true
-  category: algorithm
+taxonomy: algorithm
 author_profile: true
 date: 2019-12-25
 ---
