@@ -281,7 +281,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # Algorithm
+  # _posts
   - scope:
       path: ""
       type: posts
