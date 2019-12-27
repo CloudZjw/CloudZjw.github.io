@@ -7,4 +7,4 @@ author_profile: true
 date: 2019-12-25
 ---
 
-There is something wrong?
+All the blogs are noted from [Algorithm, Part I](https://www.coursera.org/learn/algorithms-part1/).

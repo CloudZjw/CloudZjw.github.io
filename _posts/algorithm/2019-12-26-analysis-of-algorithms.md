@@ -2,8 +2,7 @@
 title: "Analysis of Algorithms, 算法分析"
 excerpt: "使用科学方法分析算法的性能。"
 category: [Algorithm]
-tags: [Algorithm, Java]
-date: 2019-12-26
+date: 2019-12-27
 ---
 
 这仍然是[Algorithm, Part I](https://www.coursera.org/learn/algorithms-part1/)的第一周内容——算法分析的学习笔记，这次的内容对我来说可能有一点难度，所以需要更多时间来学习和理解。特别是其中的上界和下界的分析，后面我会单独发一篇笔记来记录对上下界的理解。
