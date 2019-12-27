@@ -283,18 +283,15 @@ compress_html:
 defaults:
   # Algorithm
   - scope:
-      path: "_posts/algorithm"
+      path: ""
       type: posts
     values:
-      layout: post
+      layout: single
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
-      breadcrumbs:
-        - label: "Algorithm learning notes."
-          url: /algorithm/
 
   # _pages
   - scope:
