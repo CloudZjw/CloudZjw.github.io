@@ -2,7 +2,7 @@
 title: "Union-Find Algorithm, 并查算法"
 excerpt: "包括快速查找，快速合并，算法的时间复杂度改进"
 date: 2019-12-25
-categoriy: [Algorithm]
+category: [Algorithm]
 tags: [Algorithm, Java]
 ---
 
