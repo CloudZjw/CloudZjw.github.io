@@ -6,7 +6,7 @@ alt_title: *title
 introduction: "Algorithm 4 Learning and Updating..."
 pagination:
   enabled: true
-  category: algorithm
+  category: Algorithm
 author_profile: true
 date: 2019-12-25
 ---
