@@ -3,7 +3,7 @@ layout: category
 permalink: /categories/algorithm/
 title: "Algorithm"
 introduction: "Algorithm 4 Learning and Updating..."
-taxonomy: algorithm
+taxonomy: Algorithm
 author_profile: true
 date: 2019-12-25
 ---
