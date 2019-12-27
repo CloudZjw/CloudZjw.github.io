@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Cinwell"
   avatar           : "/assets/images/avatar-seven.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**Being Better.**"
+  bio              : "Being Better."
   location         : "Guangzhou, CN"
   email            :
   links:
