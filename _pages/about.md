@@ -1,8 +1,8 @@
 ---
 title: "About"
 permalink: /about/
-<!-- header:
-  image: "/assets/images/nick-karvounis.jpg" -->
+header:
+  introduction: About the site.
 ---
 
 My Learning Blog.
