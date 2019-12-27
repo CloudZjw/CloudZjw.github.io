@@ -2,7 +2,10 @@
 title: "Union-Find Algorithm, 并查算法"
 excerpt: "包括快速查找，快速合并，算法的时间复杂度改进"
 category: [Algorithm]
+comments: true
+toc: true
 date: 2019-12-25
+last_modified_at: 2019-12-27
 ---
 
 这是[Algorithm, Part I](https://www.coursera.org/learn/algorithms-part1/)的第一周内容——并查算法的学习笔记，观看之后特来写一篇博客以加深理解和记忆。这也是我的GitHub Pages的第一篇博客。
