@@ -80,11 +80,11 @@ public static int threeSum(int[] a)
 
 ![standard-plot](/assets/images/algorithm/2019-12-26-analysis-of-algorithms/standard-plot.png)
 
-横纵坐标都取对数的情况下，称为log-log plot，此时的回归曲线为一次方程：
+坐标系的横纵坐标都取对数的情况下，称为log-log plot，此时的拟合的曲线为一次方程：
 
 ![log-log-plot](/assets/images/algorithm/2019-12-26-analysis-of-algorithms/log-log-plot.png)
 
-那么我们有方程T(N) = b*lgN + c = a * N^b，其中a = 2^c
+那么我们有方程log(T(N)) = b*logN + c = a * N^b，其中a = 2^c
 
 其中b = 2.999, c = -33.2103，有了这个假设，我们可以对16K规模的运行时间进行预测，并判断观察的结果与假设是否一致。
 
@@ -111,11 +111,13 @@ public static int twoSum(int[] a)
 
 答案是1/2N(N-1)次
 
-那么对于算法的运行时间我们需不需要这么准确地去计算类似for循环的循环次数呢？也不需要，我们只需要对他们进行粗略的估计即可。使用波浪符号~(Tilde Notation)进行运行时间估算。
+那么对于算法的运行时间我们需不需要这么准确地去计算类似for循环的循环次数呢？也不需要，我们只需要对他们进行粗略的估计即可。使用波浪符号~(Tilde Notation)进行时间估算。
 
 那么1/2N(N-1) ~ 1/2N²
 
 同时，我们可以忽略低阶的项，只取最高阶的项。
+
+下图是对3-Sum算法进行的时间估算：
 
 ![ignore-lower-order](/assets/images/algorithm/2019-12-26-analysis-of-algorithms/ignore-lower-order.png)
 
@@ -216,6 +218,7 @@ public static int fastThreeSum(int[] a)
 ## 6. 内存分析
 
 首先，1 byte = 8 bits
+
 然后我会对Java中的基本类型、数组和对象所占的内存进行分析。
 
 
@@ -292,4 +295,4 @@ public class Counter
 }
 ```
 
-分析：16 bytes of overhead, 8 bytes of reference(String instance), 4 bytes for an instance of int, 4 bytes for padding, 如果String类占用的内存是上述我们定义的，那么总共就是`32 + (2N+64) bytes = 2N+96 bytes`。
+分析：16 bytes of overhead, 8 bytes of reference(String instance), 4 bytes for an instance of int, 4 bytes for padding, 如果String类占用的内存是上述我们定义的String类，那么总共就是`32 + (2N+64) bytes = 2N+96 bytes`。
