@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: categories
 permalink: /algorithm/
 title: "Algorithm"
 taxonomy: Algorithm

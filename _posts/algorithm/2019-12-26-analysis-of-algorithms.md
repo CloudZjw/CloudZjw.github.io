@@ -1,7 +1,7 @@
 ---
 title: "Analysis of Algorithms, 算法分析"
 excerpt: "使用科学方法分析算法的性能"
-category: [Algorithm]
+categories: [Algorithm]
 tag: [Algorithm, Java]
 date: 2019-12-25
 last_modified_at: 2019-12-27
