@@ -2,7 +2,7 @@
 layout: categories
 permalink: /algorithm/
 title: "Algorithm"
-taxonomy: Algorithm
+
 author_profile: true
 ---
 
