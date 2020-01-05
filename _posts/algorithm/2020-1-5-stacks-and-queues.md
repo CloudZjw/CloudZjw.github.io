@@ -6,7 +6,7 @@ category: [Algorithm]
 tags: [Algorithm, Java]
 ---
 
-这是[Algorithm, Part I](https://www.coursera.org/learn/algorithms-part1/)的第二周内容--栈与队列的实现以及应用。
+这是[Algorithm, Part I](https://www.coursera.org/learn/algorithms-part1/)的第二周内容--栈与队列的实现
 
 ## 目录
 1. 栈
