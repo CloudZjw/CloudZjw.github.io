@@ -1,6 +1,6 @@
 ---
 title: "Stacks and Queues, 栈和队列分析"
-excerpt: "介绍栈和队列的实现方式以及应用"
+excerpt: "介绍栈和队列的实现方式"
 date: 2020-01-05
 category: [Algorithm]
 tags: [Algorithm, Java]
@@ -272,3 +272,4 @@ public class ArrayIterator implements Iterator<Item>
     return s[curr++];
   }
 }
+```
